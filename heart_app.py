@@ -89,7 +89,6 @@ prediction = loaded_model.predict(scaled_data)
 if st.button("Predict"):
     if prediction[0] == 1:
         st.error("Prediction: Heart Disease Present")
-        st.toast("your die in 2 days")
     else:
         st.success("Prediction: No Heart Disease")
         st.snow()
